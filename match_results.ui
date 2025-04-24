@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MatchResults</class>
+ <widget class="QWidget" name="MatchResults">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>800</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Matched Opportunities</string></property>
+  <property name="styleSheet"><string>
+    QWidget {
+        background-color: #f3f3f3;
+        font-family: 'Segoe UI';
+    }
+    QLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #6A1B9A;
+    }
+    QPushButton {
+        background-color: #6A1B9A;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    QPushButton:hover {
+        background-color: #4A148C;
+    }
+    QTableWidget {
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+  </string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="label_title"><property name="text"><string>📊 Your Matched Apprenticeship Opportunities</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item><widget class="QTableWidget" name="table_matches"/></item>
+   <item><widget class="QPushButton" name="btn_refresh"><property name="text"><string>🔄 Refresh Matches</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

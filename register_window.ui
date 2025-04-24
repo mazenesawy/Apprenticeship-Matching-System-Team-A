@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterWindow</class>
+ <widget class="QWidget" name="RegisterWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>420</width><height>550</height></rect></property>
+  <property name="windowTitle"><string>Register</string></property>
+  <property name="styleSheet"><string>
+    QWidget {
+        background-color: #fff;
+        font-family: 'Segoe UI';
+    }
+    QPushButton {
+        background-color: #5D3FD3;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #4B32B3;
+    }
+    QLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222;
+    }
+    QLineEdit, QComboBox {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+  </string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="label_header"><property name="text"><string>Create Your Account 🚀</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item><widget class="QComboBox" name="combo_user_type"><item><property name="text"><string>Student</string></property></item><item><property name="text"><string>Company</string></property></item></widget></item>
+   <item><widget class="QLineEdit" name="line_name"><property name="placeholderText"><string>Full Name</string></property></widget></item>
+   <item><widget class="QLineEdit" name="line_email"><property name="placeholderText"><string>Email</string></property></widget></item>
+   <item><widget class="QLineEdit" name="line_password"><property name="placeholderText"><string>Password</string></property><property name="echoMode"><enum>QLineEdit::Password</enum></property></widget></item>
+   <item><widget class="QPushButton" name="btn_submit"><property name="text"><string>Register Account</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

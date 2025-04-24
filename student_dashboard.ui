@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentDashboard</class>
+ <widget class="QWidget" name="StudentDashboard">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>800</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Student Dashboard</string></property>
+  <property name="styleSheet"><string>
+    QWidget {
+        background-color: #f9f9f9;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+    }
+    QPushButton {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #45a049;
+    }
+    QLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+  </string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="label_welcome"><property name="text"><string>Welcome, Student 🎓</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item><widget class="QPushButton" name="btn_edit_profile"><property name="text"><string>Edit Profile</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_view_matches"><property name="text"><string>View Matches</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_delete_account"><property name="text"><string>Delete Account</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_logout"><property name="text"><string>Logout</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

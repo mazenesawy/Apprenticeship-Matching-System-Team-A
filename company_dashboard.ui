@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CompanyDashboard</class>
+ <widget class="QWidget" name="CompanyDashboard">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>800</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Company Dashboard</string></property>
+  <property name="styleSheet"><string>
+    QWidget {
+        background-color: #fefefe;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+    }
+    QPushButton {
+        background-color: #2196F3;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #1976D2;
+    }
+    QLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #444;
+    }
+  </string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="label_company"><property name="text"><string>Welcome, Company 🏢</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item><widget class="QPushButton" name="btn_add_opening"><property name="text"><string>Add New Opportunity</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_edit_opening"><property name="text"><string>Edit Opportunity</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_delete_opening"><property name="text"><string>Delete Opportunity</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_logout"><property name="text"><string>Logout</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

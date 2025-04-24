@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QWidget" name="LoginWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>420</width><height>400</height></rect></property>
+  <property name="windowTitle"><string>Login</string></property>
+  <property name="styleSheet"><string>
+    QWidget {
+        background-color: #ffffff;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+    }
+    QLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+    QLineEdit {
+        padding: 8px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+    QPushButton {
+        background-color: #2196F3;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #1976D2;
+    }
+  </string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="label_title"><property name="text"><string>🔐 Login to Your Account</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item><widget class="QLineEdit" name="line_email"><property name="placeholderText"><string>Email</string></property></widget></item>
+   <item><widget class="QLineEdit" name="line_password"><property name="placeholderText"><string>Password</string></property><property name="echoMode"><enum>QLineEdit::Password</enum></property></widget></item>
+   <item><widget class="QPushButton" name="btn_login"><property name="text"><string>Login</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_register"><property name="text"><string>Create Account</string></property></widget></item>
+   <item><widget class="QPushButton" name="btn_forgot"><property name="text"><string>Forgot Password?</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
